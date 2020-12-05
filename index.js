@@ -4,6 +4,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 // DONE --- const template
 const template = require('./assets/js/template.js');
+const { listenerCount } = require('process');
 // move question prompts to another js file?
 // const prompt = require('./assets/js/prompt');
 
@@ -36,6 +37,7 @@ inquirer
         },
         {
             name: 'licence',
+            type: 'list',
             choices: [
                 "afl-3.0",
                 "apache-2.0",

@@ -1,5 +1,5 @@
 const template = (response) => {
-    const {title, description, installation, usage, licence, contributing, tests, questions} = response;
+    const {title, description, installation, usage, licence, contributing, image, questions, email, github} = response;
     return `## ${title} 
    
 ## Table of Contents
@@ -28,10 +28,15 @@ ${licence}
 ${contributing}
 
 ## Tests
-${test}
+${image}
 
 ## Questions
-${questions}`;
+${questions}
+
+## How to contact:
+
+### Email: [${email}](mailto:${email})
+### Github: [${github}](https://github.com/${github})`;
 };
 
 // how do we break this up?
