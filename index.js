@@ -2,12 +2,14 @@
 const inquirer = require('inquirer');
 // giving access to your file system to read/write/modify directly on the users computer.
 const fs = require('fs');
-// TODO --- const template
+// DONE --- const template
 const template = require('./assets/js/template.js');
 // move question prompts to another js file?
-// const questions = require('./questions.js');
+// const prompt = require('./assets/js/prompt');
 
 //
+
+
 inquirer
     .prompt([
         {
@@ -18,21 +20,64 @@ inquirer
         }, 
         {
             name: 'description',
-            type: 'input',
+            type: 'editor',
             message: 'Please describe your project'
-        }
-        // {
-        //     name: 'Table of contents',
-        //     type: '', // list
-        //     // list items
-        //     default: 'introduction',
-        // }
-    ])
-    .then((response) => {
+        },
+        {
+            name: 'installation',
+            type: 'input',
+            message: 'What are your installation needs?',
 
-        // Should the file name simply be README.md?
-        const fileName = `READMEtest.md`;
-        fs.writeFile(fileName, template(response), (err) =>
-        err ? console.log(err) : console.log("Success!")
-        );
-    });
+        }, 
+        {
+            name: 'usage',
+            type: 'editor',
+            message: 'What is the user story? What usage is expected out of this application?'
+        },
+        {
+            name: 'licence',
+            choices: [
+                "afl-3.0",
+                "apache-2.0",
+                "bsd-3-clause",
+                "cc",
+                "cc-by-4.0",
+                "wtfpl",
+                "epl-2.0",
+                "	eupl-1.1",
+                "gpl-3.0",
+                "mpl-2.0",
+                "osl-3.0",
+            ],
+            message: 'What Licenses are you utilizing?'
+        }, 
+        {
+            name: 'contributing',
+            type: 'input',
+            message: 'How would you like to handle contributions?'
+        },
+        {
+            name: 'image',
+            type: 'input',
+            message: 'Do you have an example image of your project?'
+
+        },
+        {
+            name: 'email',
+            type: 'input',
+            message: 'What is your contact email?'
+        }, 
+        {
+            name: 'github',
+            type: 'input',
+            message: 'What is your github username?'
+        }
+])
+.then((response) => {
+
+    // Should the file name simply be README.md?
+    const fileName = `READMEtest.md`;
+    fs.writeFile(fileName, template(response), (err) =>
+    err ? console.log(err) : console.log("Success!")
+    );
+});

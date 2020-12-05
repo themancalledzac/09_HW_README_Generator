@@ -1,14 +1,37 @@
 const template = (response) => {
-    const {title, description} = response;
+    const {title, description, installation, usage, licence, contributing, tests, questions} = response;
     return `## ${title} 
+   
+## Table of Contents
+[Description](#Description)
+[Installation](#Installation)
+[Usage](#Usage)
+[Licence](#Licence)
+[Contributing](#Contributing)
+[Tests](#Tests)
+[Questions](#Questions)
 
-    \`\`\`bash
-    node index.js
-    \`\`\`
 
+## Description
 ${description}
 
-##`;
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## Licence
+${licence}
+
+## Contributing
+${contributing}
+
+## Tests
+${test}
+
+## Questions
+${questions}`;
 };
 
 // how do we break this up?
@@ -24,6 +47,8 @@ ${description}
 // ### description
 
 // ### table of contents
+
+
 
 // ### installation
 
