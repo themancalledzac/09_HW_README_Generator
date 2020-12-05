@@ -62,4 +62,4 @@ const questions = [
         }
 ]
 
-module.exports = prompt;
+module.exports = questions;
