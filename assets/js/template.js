@@ -1,10 +1,11 @@
 const template = (response) => {
-    const {title, description, installation, usage, licence, contributing, image, questions, email, github} = response;
+    const {title, description, userStory, acceptanceCriteria, installation, licence, contributing, image, questions, email, github} = response;
     return `## ${title} 
    
 ## Table of Contents
 [Description](#Description)
 [User Story](#User Story)
+[Acceptance Criteria](#Acceptance Criteria)
 [Installation](#Installation)
 [Licence](#Licence)
 [Contributing](#Contributing)

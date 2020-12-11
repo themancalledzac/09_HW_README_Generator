@@ -1,4 +1,4 @@
-const questions = [``
+const questions = [
         {
             name: 'title',
             type: 'input',
@@ -22,13 +22,13 @@ const questions = [``
         },
         {
             name: 'installation',
-            type: 'input',
+            type: 'editor',
             message: 'What are your installation needs?',
 
         }, 
         {
             name: 'licence',
-            type: 'list',
+            type: 'checkbox',
             choices: [
                 "afl-3.0",
                 "apache-2.0",
@@ -51,7 +51,7 @@ const questions = [``
         },
         {
             name: 'image',
-            type: 'input',
+            type: 'editor',
             message: 'Do you have an example image of your project?'
 
         },
