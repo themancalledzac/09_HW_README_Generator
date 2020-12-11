@@ -104,6 +104,10 @@ prompt.js file
 
 Feel free to contact me with any questions.
 
-[email](mailto:themancalledzac@gmail.com)
+[Email](mailto:themancalledzac@gmail.com)
 
 [Github](https://github.com/themancalledzac)
+
+[Twitter](https://twitter.com/themancalledzac)
+
+[Instagram](https://www.instagram.com/themancalledzac/)
