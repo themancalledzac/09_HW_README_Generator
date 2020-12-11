@@ -8,7 +8,17 @@ const questions = [``
         {
             name: 'description',
             type: 'editor',
-            message: 'Please describe your project'
+            message: 'Please describe your project.'
+        },
+        {
+            name: 'userStory',
+            type: 'editor',
+            message: 'Please describe your User Story.'
+        },
+        {
+            name: 'acceptanceCriteria',
+            type: 'editor',
+            message: 'Please describe your Acceptance Criteria'
         },
         {
             name: 'installation',
@@ -16,11 +26,6 @@ const questions = [``
             message: 'What are your installation needs?',
 
         }, 
-        {
-            name: 'usage',
-            type: 'editor',
-            message: 'What is the user story? What usage is expected out of this application?'
-        },
         {
             name: 'licence',
             type: 'list',

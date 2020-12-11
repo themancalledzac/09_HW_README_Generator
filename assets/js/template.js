@@ -4,8 +4,8 @@ const template = (response) => {
    
 ## Table of Contents
 [Description](#Description)
+[User Story](#User Story)
 [Installation](#Installation)
-[Usage](#Usage)
 [Licence](#Licence)
 [Contributing](#Contributing)
 [Tests](#Tests)
@@ -15,11 +15,14 @@ const template = (response) => {
 ## Description
 ${description}
 
+## User Story
+${userStory}
+
+## Acceptance Criteria
+${acceptanceCriteria}
+
 ## Installation
 ${installation}
-
-## Usage
-${usage}
 
 ## Licence
 ${licence}
