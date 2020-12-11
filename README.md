@@ -11,7 +11,6 @@
     <a href="https://twitter.com/themancalledzac">
         <img alt="Twitter: themancalledzac" src="https://img.shields.io/twitter/follow/themancalledzac.svg?style=social" target="_blank" />
     </a>
-    <img src="https://img.shields.io/github/followers/themancalledzac?style=social" />
 </p>
   
 <p align="center">
@@ -27,9 +26,9 @@
 - [Description](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
-- [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Code](#code)
 - [Questions](#questions)
 
 ## Description
@@ -100,3 +99,11 @@ prompt.js file
 ```
 
 ![prompt.js file](./assets/images/hw09_03.PNG)
+
+## Questions
+
+Feel free to contact me with any questions.
+
+[email](mailto:themancalledzac@gmail.com)
+
+[Github](https://github.com/themancalledzac)
