@@ -39,28 +39,4 @@ ${questions}
 ### Github: [${github}](https://github.com/${github})`;
 };
 
-// how do we break this up?
-// title functionz
-// title(response) => {
-//     ${response.title}
-// };
-
-// ----------  Layout of README page-------------------------------------------------------------//
-
-// ## title
-
-// ### description
-
-// ### table of contents
-
-
-
-// ### installation
-
-// usage
-    // gif
-
-
-
-
 module.exports = template;

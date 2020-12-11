@@ -1,4 +1,4 @@
-const questions = [
+const questions = [``
         {
             name: 'title',
             type: 'input',
